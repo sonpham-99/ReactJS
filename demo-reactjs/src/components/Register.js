@@ -27,7 +27,7 @@ class Register extends Component{
 
     handleSubmit = e => {
         e.preventDefault();
-
+        
         if(formValid(this.state.formErrors)){
             console.log('\
             username: this.state.username\
