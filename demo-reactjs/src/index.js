@@ -1,15 +1,22 @@
-import React, { Component, useState } from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-// import Register from './components/Register';
-import Homepage from './Views/Homepage';
-// import About from './Views/About';
-// import signup from './Views/signup'
+import React, { Component } from 'react';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+// import Homepage from './Views/Homepage';
+// import about from './Views/About';
+import signup1 from './Views/signup1'
+// import FormsAndInputs from './Views/signup1'
 
-class index extends Component{
+class App extends Component{
     render(){
         return(
-            <Homepage />
+            <signup1 />
+            // <Router>
+            //     <Switch>
+            //         {/* <Route path="/" component={Homepage} />
+            //         <Route path="/signup" component={signup} /> */}
+            //         {/* <Route exact path ="/"><Homepage /></Route>
+            //         <Route path ="/about"><about /></Route> */}
+            //     </Switch>
+            // </Router>
         );
     }
 }

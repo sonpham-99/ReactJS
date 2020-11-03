@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import '../Public/CSS/Navbar.css'
-import Homepage from '../Views/Homepage';
-import signup from '../Views/signup';
-import about from '../Views/about';
+import signup from './signup';
+import About from './About';
 
 class Navbar extends Component{
     render(){
@@ -21,7 +20,7 @@ class Navbar extends Component{
                             <Link to ="/" className="nav-link">Home <span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/About' className='nav-link'>About</Link>
+                            <Link to="/about" className='nav-link'>About</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/signup" className="nav-link">Sign Up</Link>
@@ -33,15 +32,24 @@ class Navbar extends Component{
                     </div>
             </div>
             </nav>
-
-            {/* <Switch>
-                <Route path="/" component={Homepage}></Route>
-                <Route exact path="/about"></Route>
-                <Route path="/signup" component={signup}></Route>
-                <Route path="/signin"></Route>
-            </Switch> */}
+            
+            <Route path="/about" component={About} />
             </Router>
         );
     }
 }
 export default Navbar;
+
+// export default class Navbar extends Component{
+//     render(){
+//         return(
+//             <Router>
+//                 <div className="topnav">
+//                     <Link to="/about">About</Link>
+//                     <Link to="/signup">Sign up</Link>
+//                     <Link to="/signin">Sign in</Link>
+//                 </div>
+//             </Router>
+//         )
+//     }
+// }

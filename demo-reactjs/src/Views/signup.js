@@ -2,6 +2,8 @@ import { useState, useRef } from "react";
 import ReactDOM from 'react-dom';
 import {useForm} from 'react-hook-form';
 import '../Public/CSS/signup.css'
+import Navbar from './Navbar'
+import Footer from '../components/Footer'
 
 export default function Signup(){
   const { register, handleSubmit, errors } = useForm();
@@ -13,13 +15,16 @@ export default function Signup(){
   console.log(errors);
 
   return(
+    <div>
+      <Navbar />
     <div className="wrapper">
       <div className="form-wrapper">
-      <h1 className="title">REGISTER</h1>
+      <h1 className="title">Sign Up</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="username">
             <label htmlFor="username">Username</label>
-            <input type='text' name="username" ref={register({required:" Input username", minLength:{value:8, message:"Username must at least have 8 characters"}})} />
+            <input type='text' name="username" ref={register({required:" Input username", 
+                                                      minLength:{value:8, message:"Username must at least have 8 characters"}})} />
           </div>
           {errors.username ? <p className="error">{errors.username.message}</p> : null}
 
@@ -29,14 +34,7 @@ export default function Signup(){
                                                         minLength:{
                                                           value:6, 
                                                           message:"Password must at least have 6 characters",
-                                                          },
-                                                          validate: (value) =>{
-                                                            return [
-                                                              /[a-z]/,
-                                                              /[0-9]/
-                                                            ].every((pattern) => pattern.test(value)) || "Must include letter, number in password"
-                                                          }
-                                                          })} />
+                                                          }})} />
           </div>
           {errors.password ? <p className="error">{errors.password.message}</p> : null}
 
@@ -54,6 +52,8 @@ export default function Signup(){
           </div>
         </form>
      </div>
+    </div>
+    <Footer />
     </div>
   )
 }

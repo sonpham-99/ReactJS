@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom'
-import Navbar from '../components/Navbar';
+import Navbar from './Navbar';
 import Footer from '../components/Footer'
 
 class Homepage extends Component{

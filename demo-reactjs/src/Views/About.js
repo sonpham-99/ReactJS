@@ -29,10 +29,10 @@
 // ReactDOM.render(<About />, document.getElementById('root'));
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import Navbar from '../components/Navbar';
+import Navbar from './Navbar';
 import Footer from '../components/Footer'
 
-class about extends Component{
+ class about extends Component{
     render(){
         return(
             <div>
@@ -56,4 +56,4 @@ class about extends Component{
     }
 }
 ReactDOM.render(<about />, document.getElementById('root'));
-export default about
+export default about;
