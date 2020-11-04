@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #A5F93B;
+    background-color: white;
 }
 
 .form-wrapper {
@@ -96,4 +96,20 @@
 .error{
     color:red;
     font-weight: bolder;
+}
+
+.redi{
+  color:black!important;
+  font-weight: bolder;
+  text-align: center!important;
+  margin: 0 auto;
+}
+
+.relink{
+  color: white!important;
+}
+
+.relink:hover{
+  text-decoration: none!important;
+  color: yellow!important;
 }

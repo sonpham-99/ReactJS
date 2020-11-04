@@ -3,21 +3,21 @@ import {useForm} from 'react-hook-form';
 import '../Public/CSS/signup.css'
 import { useHistory } from "react-router-dom"; 
 
-export default function Signup(){
+export default function Login(){
   const { register, handleSubmit, errors } = useForm();
   let history = useHistory();
   const onSubmit = data => {
     // alert(JSON.stringify(data));
-    alert("Register success")
+    alert("Login success")
     console.log(data);
-    history.push("/login");
+    history.push("/");
   };
   console.log(errors);
 
   return(
     <div className="wrapper">
       <div className="form-wrapper">
-      <h1 className="title">Sign Up</h1>
+      <h1 className="title">Login</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="username">
             <label htmlFor="username">Username</label>
@@ -35,21 +35,11 @@ export default function Signup(){
                                                           }})} />
           </div>
           {errors.password ? <p className="error">{errors.password.message}</p> : null}
-
-          <div div className="email">
-            <label htmlFor="email">Email</label>
-            <input type='text' name="email" ref={register({required: "Input email", pattern: {
-                                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                                    message: "Invalid email address"
-            }})} />
-          </div>
-          {errors.email ? <p className="error">{errors.email.message}</p> : null}
-
           <div className="createAccount">
-            <button type="submit">Sign Up</button>
+            <button type="submit">Login</button>
           </div>
           <div className="redi">
-            Already have an account? <a href="./login"><span className ="relink">Login</span></a>
+            Don't have an account? <a href="./signup"><span className ="relink">Sign up</span></a>
           </div>
         </form>
      </div>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import '../Public/CSS/Footer.css'
 
 class Footer extends Component{
