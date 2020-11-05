@@ -20,7 +20,7 @@ export default class Navbar extends Component{
                             <Link to="/about" className='nav-link'>About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/product" className="nav-link">Product</Link>
+                            <Link to="/flower" className="nav-link">Flower</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/signup" className="nav-link">Sign Up</Link>
