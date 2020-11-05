@@ -8,6 +8,7 @@ import Flower from './Views/flower';
 import Signup from './Views/signup';
 import Login from './Views/login'
 import Footer from './components/Footer';
+import Waterlily from './Views/waterlily';
 
 class App extends React.Component {
    render() {
@@ -21,6 +22,7 @@ class App extends React.Component {
                         <Route path ="/flower" component={Flower}></Route>
                         <Route path ="/signup" component={Signup}></Route>
                         <Route path ="/login" component={Login}></Route>
+                        <Route path ="/waterlily" component={Waterlily}></Route>
                     </Switch>
                     <Footer />
                 </div>
