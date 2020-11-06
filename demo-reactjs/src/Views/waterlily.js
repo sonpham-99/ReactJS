@@ -9,7 +9,7 @@ function Waterlily(){
                         <img src="https://www.thespruce.com/thmb/8B3EZ9IjoEkh2rUBDv46pb3fJUA=/4478x2989/filters:fill(auto,1)/the-incomparable-waterlily-and-lotus-1403525-22-dc91986882b6494e96c142144817fff5.jpg" alt=" " className="img" />
                     <div className="details col-md-6">
                         <h3 className="product-title">Water Lily</h3>
-                        <h4 class="price">Price: 3 USD </h4>
+                        <h4 class="price">Price: 0.84 USD </h4>
                         <p className="language">Flower Language: Water lily mean the purity of heart</p>
                         <p className="description">Water lilies are one of the most beautiful flower in the world, not only because of their appearance but because of what they represent.<br />
                         This is why many countries have chosen this flower as a national flower, and why many religions often consider water lilies as a symbolic representation of their beliefs.<br />

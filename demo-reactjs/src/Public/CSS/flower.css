@@ -13,7 +13,7 @@
       position: relative;
   }
 .container.sub{
-    margin-top: 20px;
+    margin-top: 25px;
 }
   /*css content*/
   
@@ -35,7 +35,8 @@
       color: black;
   }
   .name a:hover{
-      color: deeppink;
+      color: #E920E0;
+      text-decoration: none!important;
   }
   .display img{
       width:200px;
@@ -44,6 +45,7 @@
   }
   .price{
       font-size: 18px;
+      color: #D267F2!important;
   }
 
   img {

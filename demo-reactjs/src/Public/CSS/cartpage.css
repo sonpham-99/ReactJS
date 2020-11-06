@@ -1,0 +1,71 @@
+@media screen and (max-width: 600px) { 
+    table#cart tbody td .form-control { 
+    width:20%; 
+    display: inline !important;}
+} 
+
+.container.table{
+    display: block;
+}
+
+.imgsc{
+    width: 230px;
+    height: 200px;
+}
+
+.pic{
+    width: 300px;
+}
+
+.flowername{
+    width: 200px;
+    margin: 0px auto;
+}
+
+.flowerprice{
+    width: 150px;
+    margin: 0px auto;
+}
+
+.amount{
+    width: 130px;
+    margin-right: 130px;
+    margin: 0px auto;
+}
+
+.total{
+    margin: 0px auto;
+    width: 150px;
+}
+
+.delete{
+    width: 100px;
+}
+.form-control{
+    width: 60px;
+}
+
+.btn.btn-primary{
+    margin-top: 30px;
+    background-color: violet!important;
+    border: 1px solid red;
+}
+
+.btn.btn-primary:hover{
+    margin-top: 30px;
+    background-color: #FE12DD!important;
+    border: 1px solid skyblue;
+}
+
+.btn.btn-success{
+    background-color: red!important;
+    margin-top: 30px;
+    border: 1px solid #1806E8;
+}
+
+.btn.btn-success:hover{
+    background-color: #FFFE00!important;
+    margin-top: 30px;
+    border: 1px solid #1CC604;
+    color: black!important;
+}

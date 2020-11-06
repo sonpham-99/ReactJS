@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Public/CSS/product.css';
+import '../Public/CSS/flower.css';
 import Waterlily from './waterlily';
 
 function Flower(){

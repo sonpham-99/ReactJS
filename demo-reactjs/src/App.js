@@ -7,6 +7,8 @@ import About from './Views/About';
 import Flower from './Views/flower';
 import Signup from './Views/signup';
 import Login from './Views/login'
+import Cartpage from './Views/cartpage';
+import Checkout from './Views/checkout'
 import Footer from './components/Footer';
 import Waterlily from './Views/waterlily';
 
@@ -23,6 +25,8 @@ class App extends React.Component {
                         <Route path ="/signup" component={Signup}></Route>
                         <Route path ="/login" component={Login}></Route>
                         <Route path ="/waterlily" component={Waterlily}></Route>
+                        <Route path ="/cart" component={Cartpage}></Route>
+                        <Route path ="/checkout" component={Checkout}></Route>
                     </Switch>
                     <Footer />
                 </div>

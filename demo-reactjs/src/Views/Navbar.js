@@ -28,6 +28,11 @@ export default class Navbar extends Component{
                         <li className="nav-item">
                             <Link to="/login" className="nav-link">Log In</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link to="/cart">
+                                <img className="cart" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Shopping_cart_icon.svg/1250px-Shopping_cart_icon.svg.png" />
+                            </Link>
+                        </li>
                         </ul>
                     </div>
             </div>
