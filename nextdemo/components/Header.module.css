@@ -1,0 +1,77 @@
+#nav{
+    background-color: navy;
+    margin-bottom: 5px;
+}
+
+.home{
+    color: white;
+    font-size: 3rem;
+    margin-right: 50px;
+    text-decoration: none!important;
+    margin-left: 30px;
+}
+.home:hover{
+    color: gold;
+}
+
+#searchbar{
+    width: 500px;
+    margin-left: 8rem;
+
+}
+
+#btsearch{
+    background-color: white;
+    color: navy;
+    margin-right: 4rem;
+    font-weight: bold;
+    border: 1px solid gold;
+}
+#btsearch:active{
+    background-color: lightblue;
+    color: #000;
+}
+
+.reg{
+    font-size: 20px;
+    color: white;
+    margin-left: 4rem;
+    margin-right: 1.5rem;
+    text-decoration: none!important;
+}
+.reg:hover{
+    color: gold;
+}
+
+.log{
+    font-size: 20px;
+    color: white;
+    margin-right: 1.5rem;
+    text-decoration: none!important;
+}
+.log:hover{
+    color: gold;
+}
+
+.cart{
+    font-size: 20px;
+    color: white;
+    margin-left: 3rem;
+    text-decoration: none!important;
+}
+.cart:hover{
+    color: gold;
+}
+
+#nav2{
+    background-color: white;
+    margin-top: 10px;
+}
+
+.jewel{
+    color: navy;
+    font-weight: bold;
+    padding: 65px;
+    font-size: 1.5rem;
+    text-decoration: none!important;
+}

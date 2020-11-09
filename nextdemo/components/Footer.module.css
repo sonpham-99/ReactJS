@@ -1,0 +1,12 @@
+#foot{
+    background-color: navy;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+}
+
+#text{
+    color: white!important;
+}
