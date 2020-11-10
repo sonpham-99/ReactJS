@@ -1,10 +1,10 @@
 import Link from "next/link";
 import styles from "../../components/Jewel_index.module.css";
-import Nhan001 from "./ring-001";
+import Nhan001 from "./bracelet-001";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
-export default function Ring() {
+export default function Bracelet() {
   return (
     <div>
       <head>
@@ -21,21 +21,21 @@ export default function Ring() {
         <div className="row">
           <div className="display" id={styles.display}>
             <div className="card" id={styles.card}>
-              <Link href="/Ring/ring-001">
+              <Link href="/Bracelet/bracelet-001">
                 <a>
                   <img
                     className={styles.jewel}
-                    src="https://cfcdn19.candere.com/media/catalog/product/cache/1/image/1020x1020/9df78eab33525d08d6e5fb8d27136e95/g/r/gr00103_1.jpg?v=1520508120"
+                    src="https://d2074lugj8w6nr.cloudfront.net/lh-web-db/product/B516/B516_Kaye_Medical_ID_Bracelet_with_Rose_Gold_Gardenia_Medical_ID_Tag_Overhead_updated_AKR.jpg"
                   />
                 </a>
               </Link>
               <div className="card-body">
-                <Link href="/Ring/ring-001">
+                <Link href="/Bracelet/bracelet-001">
                   <a>
-                    <h4 className={styles.name}>Nhẫn 001</h4>
+                    <h4 className={styles.name}>Vòng tay 001</h4>
                   </a>
                 </Link>
-                <div className={styles.price}>4.000.000 đ</div>
+                <div className={styles.price}>1.000.000 đ</div>
                 <center>
                   <button
                     className="add-to-cart btn btn-default"

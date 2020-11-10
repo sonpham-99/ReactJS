@@ -5,11 +5,11 @@ import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-export default function Login() {
+export default function Register() {
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = data => {
         // alert(JSON.stringify(data));
-        alert("Đăng nhập thành công")
+        alert("Đăng ký thành công")
         console.log(data);
       };
       console.log(errors);
@@ -26,7 +26,7 @@ export default function Login() {
 
         <div className="wrapper" id={styles.wrapper}>
             <div className="form-wrapper" id={styles.formwrapper}>
-            <h1 className="title" id={styles.title}>Đăng nhập</h1>
+            <h1 className="title" id={styles.title}>Đăng ký</h1>
                 <form onSubmit={handleSubmit(onSubmit)} className='form'>
                 <div className="username" id={styles.username}>
                     <label htmlFor="username" className={styles.label}>Tên tài khoản</label>
@@ -45,14 +45,21 @@ export default function Login() {
                 </div>
                 {errors.password ? <p className={styles.error}>{errors.password.message}</p> : null}
 
+                <div div className="email" id={styles.email}>
+                    <label htmlFor="email" className={styles.label}>Email</label>
+                    <input className={styles.input} type='text' name="email" ref={register({required: "Input email", pattern: {
+                                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                            message: "Email không hợp lệ"
+                    }})} />
+                </div>
                 {errors.email ? <p className={styles.error}>{errors.email.message}</p> : null}
 
                 <div className={styles.create}>
-                    <button type="submit">Đăng nhập</button>
+                    <button type="submit">Đăng ký</button>
                 </div>
                 <div className={styles.redi}>
-                    Chưa có tài khoản? 
-                    <Link href="./dangky"><a><span className ={styles.relink}> Đăng ký</span></a></Link>
+                    Đã có tài khoản? 
+                    <Link href="./login"><a><span className ={styles.relink}> Đăng nhập</span></a></Link>
                 </div>
                 </form>
             </div>

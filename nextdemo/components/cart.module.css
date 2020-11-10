@@ -1,0 +1,52 @@
+#delete {
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+}
+
+#code {
+  font-size: 15px;
+  color: darkorange !important;
+}
+
+.h5 {
+  color: navy;
+}
+
+.button {
+  background-color: white !important;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.quantity {
+  width: 50px;
+}
+
+.price {
+  font-size: 20px;
+}
+
+#temp {
+  font-size: 20px;
+}
+
+#total {
+  font-size: 25px;
+}
+
+#order {
+  /* margin-left: 69%; */
+  font-size: 20px;
+  width: 100%;
+}
+
+.coupon {
+  margin-left: 14%;
+  width: 70%;
+}
+
+.addcp {
+  background-color: navy;
+  color: white;
+}
